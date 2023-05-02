@@ -1,0 +1,32 @@
+
+Git Commit without Stage
+Sometimes, when you make small changes, using the staging environment seems like a waste of time. It is possible to commit changes directly, skipping the staging environment. The -a option will automatically stage every changed, already tracked file.
+
+Let's add a small update to index.html:
+
+Example
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello World!</title>
+<link rel="stylesheet" href="bluestyle.css">
+</head>
+<body>
+
+<h1>Hello world!</h1>
+<p>This is the first file in my new Git Repo.</p>
+<p>A new line in our file!</p>
+
+</body>
+</html>
+And check the status of our repository. But this time, we will use the --short option to see the changes in a more compact way:
+
+Example
+git status --short
+ M index.html
+Note: Short status flags are:
+
+?? - Untracked files
+A - Files added to stage
+M - Modified files
+D - Deleted files
